@@ -25,6 +25,7 @@ import (
 	filebuilder "github.com/mitchellh/packer/builder/file"
 	googlecomputebuilder "github.com/mitchellh/packer/builder/googlecompute"
 	hypervisobuilder "github.com/mitchellh/packer/builder/hyperv/iso"
+	lxdbuilder "github.com/mitchellh/packer/builder/lxd"
 	nullbuilder "github.com/mitchellh/packer/builder/null"
 	oneandonebuilder "github.com/mitchellh/packer/builder/oneandone"
 	openstackbuilder "github.com/mitchellh/packer/builder/openstack"
@@ -84,6 +85,7 @@ var Builders = map[string]packer.Builder{
 	"docker":              new(dockerbuilder.Builder),
 	"file":                new(filebuilder.Builder),
 	"googlecompute":       new(googlecomputebuilder.Builder),
+	"lxd":                 new(lxdbuilder.Builder),
 	"hyperv-iso":          new(hypervisobuilder.Builder),
 	"null":                new(nullbuilder.Builder),
 	"oneandone":           new(oneandonebuilder.Builder),
